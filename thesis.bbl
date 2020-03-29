@@ -16,5 +16,435 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}\enddatalist
+\datalist[entry]{nyt/global//global/global}
+  \entry{Ehresmann.2018}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=EC}{%
+         family={Ehresmann},
+         familyi={E\bibinitperiod},
+         given={Cona},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Badura},
+         familyi={B\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=BB}{%
+         family={Badura},
+         familyi={B\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Ducki},
+         familyi={D\bibinitperiod},
+         given={Antje},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schr{\"o}der},
+         familyi={S\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klose},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Berlin Heidelberg}}%
+    }
+    \strng{namehash}{ECBB1}
+    \strng{fullhash}{ECBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{Fehlzeiten-Report 2018}
+    \verb{doi}
+    \verb 10.1007/978-3-662-57388-4_4
+    \endverb
+    \field{isbn}{978-3-662-57387-7}
+    \field{pages}{47\bibrangedash 59}
+    \field{title}{Sinnquellen in der Arbeitswelt und ihre Bedeutung f{\"u}r die
+  Gesundheit}
+    \field{volume}{12}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{Eisenmann.2018}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=EM}{%
+         family={Eisenmann},
+         familyi={E\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wienzek},
+         familyi={W\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=BB}{%
+         family={Badura},
+         familyi={B\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Ducki},
+         familyi={D\bibinitperiod},
+         given={Antje},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schr{\"o}der},
+         familyi={S\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klose},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Berlin Heidelberg}}%
+    }
+    \strng{namehash}{EMWT1}
+    \strng{fullhash}{EMWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{Fehlzeiten-Report 2018}
+    \verb{doi}
+    \verb 10.1007/978-3-662-57388-4_15
+    \endverb
+    \field{isbn}{978-3-662-57387-7}
+    \field{pages}{177\bibrangedash 188}
+    \field{title}{Stellt Digitalisierung eine Gefahr oder eine Chance f{\"u}r
+  das Sinnerleben der Arbeit dar?}
+    \field{volume}{89}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{FluterHoffmann.2018}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=FHC}{%
+         family={Fl{\"u}ter-Hoffmann},
+         familyi={F\bibinithyphendelim H\bibinitperiod},
+         given={Christiane},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=BB}{%
+         family={Badura},
+         familyi={B\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Ducki},
+         familyi={D\bibinitperiod},
+         given={Antje},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schr{\"o}der},
+         familyi={S\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klose},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Berlin Heidelberg}}%
+    }
+    \strng{namehash}{FHC1}
+    \strng{fullhash}{FHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{Fehlzeiten-Report 2018}
+    \verb{doi}
+    \verb 10.1007/978-3-662-57388-4_17
+    \endverb
+    \field{isbn}{978-3-662-57387-7}
+    \field{pages}{201\bibrangedash 211}
+    \field{title}{Sinnstiftung als Erfolgsfaktor: Wie Arbeitgeber dazu
+  beitragen k{\"o}nnen, dass Besch{\"a}ftigte ihre Arbeit als sinnvoll erleben}
+    \field{volume}{23}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{Freier.2018}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=FC}{%
+         family={Freier},
+         familyi={F\bibinitperiod},
+         given={Carolin},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=BB}{%
+         family={Badura},
+         familyi={B\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Ducki},
+         familyi={D\bibinitperiod},
+         given={Antje},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schr{\"o}der},
+         familyi={S\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klose},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Berlin Heidelberg}}%
+    }
+    \strng{namehash}{FC1}
+    \strng{fullhash}{FC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{Fehlzeiten-Report 2018}
+    \verb{doi}
+    \verb 10.1007/978-3-662-57388-4_5
+    \endverb
+    \field{isbn}{978-3-662-57387-7}
+    \field{pages}{63\bibrangedash 73}
+    \field{title}{Was bedeutet uns Arbeiten?}
+    \field{volume}{31}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{Schnell.2018}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=ST}{%
+         family={Schnell},
+         familyi={S\bibinitperiod},
+         given={Tatjana},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=BB}{%
+         family={Badura},
+         familyi={B\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Ducki},
+         familyi={D\bibinitperiod},
+         given={Antje},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schr{\"o}der},
+         familyi={S\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klose},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Berlin Heidelberg}}%
+    }
+    \strng{namehash}{ST1}
+    \strng{fullhash}{ST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Fehlzeiten-Report 2018}
+    \verb{doi}
+    \verb 10.1007/978-3-662-57388-4_2
+    \endverb
+    \field{isbn}{978-3-662-57387-7}
+    \field{pages}{11\bibrangedash 21}
+    \field{title}{Von Lebenssinn und Sinn in der Arbeit}
+    \field{volume}{12}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{SenghaasKnobloch.2008}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SKE}{%
+         family={Senghaas-Knobloch},
+         familyi={S\bibinithyphendelim K\bibinitperiod},
+         given={Eva},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{VS, Verl. f{\"u}r Sozialwiss}}%
+    }
+    \strng{namehash}{SKE1}
+    \strng{fullhash}{SKE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{edition}{1. Aufl.}
+    \field{isbn}{978-3-531-90939-4}
+    \field{title}{Wohin driftet die Arbeitswelt?}
+    \list{location}{1}{%
+      {Wiesbaden}%
+    }
+    \verb{file}
+    \verb http://www.worldcat.org/oclc/300141813
+    \endverb
+    \field{year}{2008}
+  \endentry
+
+  \entry{Voswinkel.2018}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=VS}{%
+         family={Voswinkel},
+         familyi={V\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=BB}{%
+         family={Badura},
+         familyi={B\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Ducki},
+         familyi={D\bibinitperiod},
+         given={Antje},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schr{\"o}der},
+         familyi={S\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klose},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer Berlin Heidelberg}}%
+    }
+    \strng{namehash}{VS1}
+    \strng{fullhash}{VS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{booktitle}{Fehlzeiten-Report 2018}
+    \verb{doi}
+    \verb 10.1007/978-3-662-57388-4_16
+    \endverb
+    \field{isbn}{978-3-662-57387-7}
+    \field{pages}{191\bibrangedash 199}
+    \field{title}{Was erleben Besch{\"a}ftigte als sinnvolle (bzw. sinnlose)
+  Arbeit? Gesundheitliche Belastungen durch Erfahrungen von Sinnlosigkeit}
+    \field{volume}{40}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2018}
+  \endentry
+\enddatalist
 \endinput

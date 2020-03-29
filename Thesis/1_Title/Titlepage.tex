@@ -1,8 +1,14 @@
-
+%*******************************************************
+% Titlepage
+%*******************************************************
+%%%
+%%% title page (german)
+%%%
 \thispagestyle{empty}
 \pdfbookmark[0]{Titelblatt}{title}
 \begin{titlepage}
 
+  % If printed on two sides, center the title page
   \condTWOSIDE{\changetext{}{19mm}{}{19mm}{}}
 
   \vspace{1cm}
@@ -28,7 +34,7 @@
   \vfill
 
   \begin{center}
-    \Large Hausarbeit zum Begleitseminar "Problemlösung und Diskussion"\\
+    \Large Interdisziplinäre und sozialwissenschaftliche Reflexion der Informatik\\
     \vspace{0.3cm}    
   \end{center}
 
@@ -51,6 +57,7 @@
     \end{tabular}
   \end{center} 
 
+  % If printed on two sides, center the title page
   \condTWOSIDE{\changetext{}{-19mm}{}{-19mm}{}}
 
 \end{titlepage}

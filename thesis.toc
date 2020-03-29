@@ -6,10 +6,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}{Einleitung}}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}{Was ist Sinn?}}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {2}{Was heißt Sinn?}}{2}{chapter.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}{Was macht Arbeit sinnvoll?}}{3}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}{Chancen und Risiken durch Digitalisierung}}{5}{chapter.4}%
+\contentsline {section}{\numberline {3.1}{Arbeit und Individuum}}{3}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}{Fazit}}{13}{chapter.5}%
+\contentsline {section}{\numberline {3.2}{Kohärenz im Beruf}}{4}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}{Qualität der Organisation}}{4}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}{Arbeit und Gesellschaft}}{5}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}{Sinnerfüllung}}{5}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}{Chancen und Risiken der Digitalisierung}}{7}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}{Substitution von Arbeit}}{7}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}{Upgrading of Work}}{8}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}{Polarisierung}}{8}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}{Fazit}}{10}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\vspace {\beforebibskip }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}{Literatur}}{11}{section*.1}%

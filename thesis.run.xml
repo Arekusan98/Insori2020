@@ -89,7 +89,7 @@
       <file>thesis-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>Thesis/4_Backmatter/Bibliography.bib</file>
+      <file>bibliography.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

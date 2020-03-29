@@ -4,14 +4,13 @@ The top-level auxiliary file: thesis.aux
 The style file: biblatex.bst
 A level-1 auxiliary file: Thesis/1_Title/Titlepage.aux
 A level-1 auxiliary file: Thesis/1_Title/Titleback.aux
-A level-1 auxiliary file: Thesis/2_Frontmatter/Declaration.aux
-A level-1 auxiliary file: Thesis/2_Frontmatter/Abstract.aux
 A level-1 auxiliary file: Thesis/2_Frontmatter/Contents.aux
-A level-1 auxiliary file: Thesis/3_MainContent/1_Introduction.aux
-A level-1 auxiliary file: Thesis/3_MainContent/Was_ist_Sinn.aux
-A level-1 auxiliary file: Thesis/3_MainContent/Was_macht_Arbeit_sinnvoll.aux
-A level-1 auxiliary file: Thesis/3_MainContent/Chancen_und_Risiken.aux
-A level-1 auxiliary file: Thesis/3_MainContent/5_Conclusion.aux
+A level-1 auxiliary file: Thesis/2_Frontmatter/Abstract.aux
+A level-1 auxiliary file: Thesis/3_MainContent/1_Introduction/Introduction.aux
+A level-1 auxiliary file: Thesis/3_MainContent/2_WasHeisstSinn/WasHeisstSinn.aux
+A level-1 auxiliary file: Thesis/3_MainContent/3_WasMachtArbeitSinnvoll/WasMachtArbeitSinnvoll.aux
+A level-1 auxiliary file: Thesis/3_MainContent/4_ChancenUndRisiken/ChancenUndRisiken.aux
+A level-1 auxiliary file: Thesis/3_MainContent/5_Conclusion/Conclusion.aux
 A level-1 auxiliary file: Thesis/4_Backmatter/Bibliography.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -29,48 +28,48 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: thesis-blx.bib
-Database file #2: Thesis/4_Backmatter/Bibliography.bib
+Database file #2: bibliography.bib
 Biblatex version: 3.13
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 1 entry,
+You've used 8 entries,
             6363 wiz_defined-function locations,
-            1202 strings with 9275 characters,
-and the built_in function-call counts, 1557 in all, are:
-= -- 73
-> -- 73
-< -- 1
-+ -- 52
-- -- 30
-* -- 32
-:= -- 373
+            1257 strings with 10705 characters,
+and the built_in function-call counts, 77468 in all, are:
+= -- 6476
+> -- 1020
+< -- 454
++ -- 2230
+- -- 281
+* -- 5123
+:= -- 8802
 add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 0
+call.type$ -- 8
+change.case$ -- 7
 chr.to.int$ -- 44
-cite$ -- 0
-duplicate$ -- 11
-empty$ -- 104
-format.name$ -- 0
-if$ -- 333
+cite$ -- 14
+duplicate$ -- 8428
+empty$ -- 6437
+format.name$ -- 599
+if$ -- 15597
 int.to.chr$ -- 0
-int.to.str$ -- 0
+int.to.str$ -- 34
 missing$ -- 0
-newline$ -- 20
-num.names$ -- 0
-pop$ -- 47
+newline$ -- 446
+num.names$ -- 630
+pop$ -- 2946
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 422
 quote$ -- 0
-skip$ -- 78
+skip$ -- 2367
 stack$ -- 0
-substring$ -- 155
-swap$ -- 1
-text.length$ -- 20
-text.prefix$ -- 0
+substring$ -- 11087
+swap$ -- 1775
+text.length$ -- 225
+text.prefix$ -- 7
 top$ -- 1
-type$ -- 22
+type$ -- 260
 warning$ -- 0
-while$ -- 65
+while$ -- 1308
 width$ -- 0
-write$ -- 20
+write$ -- 439
