@@ -1,0 +1,665 @@
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{classicthesis}[2017/10/13 v4.4 Typographic style for a classic-looking thesis]
+\PassOptionsToPackage{latest}{latexrelease} 
+  \RequirePackage{latexrelease} 
+
+\RequirePackage{ifthen}
+
+
+
+
+\RequirePackage{kvoptions}
+\SetupKeyvalOptions{family=ct, prefix=ct@}
+
+\DeclareBoolOption{drafting} 
+
+\DeclareBoolOption{tocaligned} 
+\DeclareBoolOption{dottedtoc} 
+\DeclareBoolOption{listsseparated} 
+
+\DeclareBoolOption{parts} 
+
+\DeclareBoolOption{nochapters} 
+\DeclareBoolOption{eulerchapternumbers} 
+\DeclareBoolOption{linedheaders} 
+\DeclareBoolOption{floatperchapter} 
+\DeclareBoolOption{manychapters} 
+
+\DeclareBoolOption{listings} 
+\DeclareBoolOption{subfig} 
+
+\DeclareBoolOption{eulermath} 
+\DeclareBoolOption{beramono} 
+\DeclareBoolOption{minionpro} 
+
+\DeclareBoolOption{minionprospacing} 
+\DeclareBoolOption{pdfspacing} 
+
+\DeclareBoolOption{a4paper}
+\DeclareBoolOption{a5paper}
+\DeclareBoolOption{letterpaper}
+\DeclareStringOption[a4]{paper} 
+\ProcessKeyvalOptions{ct}
+
+
+
+
+
+\ifthenelse{\boolean{ct@letterpaper}}{\renewcommand*{\ct@paper}{letter}}{}
+\ifthenelse{\boolean{ct@a5paper}}{\renewcommand*{\ct@paper}{a5}}{}
+\ifthenelse{\boolean{ct@a4paper}}{\renewcommand*{\ct@paper}{a4}}{}
+
+\ifthenelse{\equal{\ct@paper}{a4}}
+        {\setboolean{ct@a4paper}{true} \setboolean{ct@a5paper}{false} \setboolean{ct@letterpaper}{false}}
+        {}
+\ifthenelse{\equal{\ct@paper}{a5}}
+        {\setboolean{ct@a4paper}{false} \setboolean{ct@a5paper}{true} \setboolean{ct@letterpaper}{false}}
+        {}
+\ifthenelse{\equal{\ct@paper}{letter}}
+        {\setboolean{ct@a4paper}{false} \setboolean{ct@a5paper}{false} \setboolean{ct@letterpaper}{true}}
+        {}
+
+
+
+
+
+\@ifpackageloaded{subfig}
+    {\setboolean{ct@subfig}{true}
+    }{\relax}
+
+\ifthenelse{\boolean{ct@subfig}}
+    {\PassOptionsToPackage{subfigure}{tocloft}
+    }{\relax}
+
+
+\ifthenelse{\boolean{ct@listings}}
+    {\@ifpackageloaded{listings}
+        {\relax}{\RequirePackage{listings}}
+    }{\relax}
+
+
+
+
+\ifthenelse{\isundefined{\chapter}\OR\boolean{ct@nochapters}}
+    {
+        \PackageWarningNoLine{classicthesis}{Chapter sectioning command not present in this document class. 
+                Deactivating options floatperchapter, linedheaders, manychapters, listsseparated, eulerchapternumbers and parts}
+        \setboolean{ct@linedheaders}{false}
+        \setboolean{ct@listsseparated}{false}
+        \setboolean{ct@eulerchapternumbers}{false}
+        \setboolean{ct@parts}{false}
+        \setboolean{ct@manychapters}{false}
+        \setboolean{ct@floatperchapter}{false}
+        \setboolean{ct@nochapters}{true}
+    }{\relax}
+
+
+
+
+\RequirePackage{ifpdf}
+\RequirePackage{ifxetex}
+\RequirePackage{ifluatex}
+\ifthenelse{\boolean{pdf}\OR\boolean{luatex}\OR\boolean{xetex}}
+           {
+           \RequirePackage{hyperref}
+           \pdfstringdefDisableCommands{\let\thepart=\relax} 
+           
+           }{}
+
+
+
+
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+    \RequirePackage{xcolor} 
+\definecolor{halfgray}{gray}{0.55} 
+\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{webbrown}{rgb}{.6,0,0}
+
+
+
+
+
+
+
+\ifthenelse{\boolean{xetex}\OR\boolean{luatex}}
+   { 
+     \RequirePackage{fontspec}
+     \setmainfont[Ligatures=TeX,Numbers=OldStyle]{TeX Gyre Pagella} 
+     \linespread{1.05} 
+     \ifthenelse{\boolean{ct@beramono}}
+       {\setmonofont[Scale=0.85]{DejaVu Sans Mono}} 
+       {\setmonofont[Scale=1]{Latin Modern Mono}}
+     \RequirePackage{unicode-math}
+     \setmathfont{TeX Gyre Pagella Math}
+     
+     
+     
+   }
+   { 
+     \ifthenelse{\boolean{ct@minionpro}}
+       {
+         
+         \ifthenelse{\boolean{ct@eulermath}}
+           {
+             \PassOptionsToPackage{opticals,mathlf,onlytext}{MinionPro}
+             \RequirePackage{MinionPro} 
+           }{
+             \PassOptionsToPackage{opticals,mathlf}{MinionPro}
+             \RequirePackage{MinionPro} 
+           }
+       }{
+       
+         \PassOptionsToPackage{osf,sc}{mathpazo}
+         \RequirePackage{mathpazo} 
+         \linespread{1.05} 
+       }
+
+       \ifthenelse{\boolean{ct@beramono}}
+         {\PassOptionsToPackage{scaled=0.85}{beramono}
+           \RequirePackage{beramono}
+         }{
+         \relax
+         
+         
+         }
+
+       \ifthenelse{\boolean{ct@eulermath}}
+         {\PassOptionsToPackage{euler-digits}{eulervm}
+         \RequirePackage{eulervm}} 
+         {\relax}
+   }
+
+       \ifthenelse{\boolean{ct@eulerchapternumbers}}
+          {\DeclareFixedFont{\chapterNumber}{U}{eur}{b}{n}{70}}
+          {\DeclareFixedFont{\chapterNumber}{T1}{pplj}{m}{n}{70}}
+         
+         
+         
+         
+         
+
+
+
+
+\RequirePackage{microtype} 
+
+
+
+
+
+
+\@ifpackageloaded{typearea}
+    {\relax}{
+        \PassOptionsToPackage{headinclude,footinclude}{typearea}
+        \RequirePackage{typearea}
+    }
+
+\ifthenelse{\boolean{ct@letterpaper}}
+    {
+        \ifthenelse{\boolean{ct@minionpro}}
+        {
+            \PackageInfo{classicthesis}{letter paper, MinionPro}
+            \areaset[current]{332pt}{634pt}
+            \setlength{\marginparwidth}{7.5em}
+            \setlength{\marginparsep}{2em}
+        }{
+            \PackageInfo{classicthesis}{letter paper, Palatino or other}
+            \areaset[current]{356pt}{700pt} 
+            \setlength{\marginparwidth}{7em}
+            \setlength{\marginparsep}{2em}
+        }
+    }{\relax}
+\ifthenelse{\boolean{ct@a5paper}}
+    {
+        \ifthenelse{\boolean{ct@minionpro}}
+        {
+            \PackageInfo{classicthesis}{A5 paper, MinionPro}
+            \areaset[current]{278pt}{556pt}
+            \setlength{\marginparwidth}{5em}
+            \setlength{\marginparsep}{1.25em}
+        }{
+            \PackageInfo{classicthesis}{A5 paper, Palatino or other}
+            \areaset[current]{288pt}{555pt}
+            \setlength{\marginparwidth}{4em}
+            \setlength{\marginparsep}{1.25em}
+        }
+    }{\relax}
+\ifthenelse{\boolean{ct@a4paper}}
+    {
+        \ifthenelse{\boolean{ct@minionpro}}
+        {
+            \PackageInfo{classicthesis}{A4 paper, MinionPro}
+            \areaset[current]{312pt}{684pt}
+            \setlength{\marginparwidth}{7.5em}
+            \setlength{\marginparsep}{2em}
+        }{
+            \PackageInfo{classicthesis}{A4 paper, Palatino or other}
+            \areaset[current]{370pt}{750pt} 
+            
+            
+            \setlength{\marginparwidth}{7em}
+            \setlength{\marginparsep}{2em}
+        }
+    }{\relax}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\clubpenalty = 10000
+
+\widowpenalty = 10000
+\displaywidowpenalty = 10000 
+
+
+
+\def\graffito@setup{
+
+   \itshape\footnotesize\leavevmode\color{Black}
+   \parindent=0pt \lineskip=0pt \lineskiplimit=0pt 
+   \tolerance=2000 \hyphenpenalty=300 \exhyphenpenalty=300
+   \doublehyphendemerits=100000
+   \finalhyphendemerits=\doublehyphendemerits}
+
+
+
+
+\let\oldmarginpar\marginpar
+\renewcommand{\marginpar}[2][]{
+   \if\relax\detokenize{#1}\relax
+      \oldmarginpar[\graffito@setup\raggedleft\hspace{0pt}#2]{\graffito@setup\raggedright\hspace{0pt}#2}
+   \else
+      \oldmarginpar[#1]{#2}
+   \fi
+}
+
+
+
+\newenvironment{aenumerate}
+    {\def\theenumi{\textsc{\alph{enumi}}}
+     \enumerate}
+    {\endenumerate}
+
+
+
+
+\RequirePackage{booktabs} 
+\RequirePackage{textcase} 
+
+
+\ifthenelse{\boolean{ct@minionpro}}{
+        \PackageInfo{classicthesis}{Using MinionPro's textssc for character spacing.}
+        \DeclareRobustCommand{\spacedallcaps}[1]{\textssc{\MakeTextUppercase{#1}}}
+        \DeclareRobustCommand{\spacedlowsmallcaps}[1]{\textssc{\MakeTextLowercase{#1}}}
+      }{
+        
+        \ifthenelse{\boolean{pdf}\OR\boolean{luatex}}{ 
+            \PackageInfo{classicthesis}{Using pdftex/microtype for character spacing.
+                                        Make sure your pdftex is version 1.40 or higher.}
+            \microtypesetup{expansion=false}
+            \DeclareRobustCommand{\spacedallcaps}[1]{\textls[160]{\MakeTextUppercase{#1}}}
+            \DeclareRobustCommand{\spacedlowsmallcaps}[1]{\textls[80]{\scshape\MakeTextLowercase{#1}}}
+          }{\relax}
+
+        \ifthenelse{\boolean{xetex}}{ 
+          \DeclareRobustCommand{\spacedallcaps}[1]{{\addfontfeature{LetterSpace=18.0}\MakeTextUppercase{#1}}}
+          \DeclareRobustCommand{\spacedlowsmallcaps}[1]{{\addfontfeatures{LetterSpace=14.0}\scshape\MakeTextLowercase{#1}}}
+          }{\relax}
+
+        \ifthenelse{\boolean{pdf}\OR\boolean{xetex}\OR\boolean{luatex}}
+          {\relax}{
+            \RequirePackage{soulutf8} 
+                \sodef\allcapsspacing{\upshape}{0.15em}{0.65em}{0.6em}
+                \sodef\lowsmallcapsspacing{\scshape}{0.075em}{0.5em}{0.6em}
+                \DeclareRobustCommand{\spacedallcaps}[1]{\MakeTextUppercase{\allcapsspacing{#1}}}
+                \DeclareRobustCommand{\spacedlowsmallcaps}[1]{\MakeTextLowercase{\lowsmallcapsspacing{#1}}}
+          }
+      }
+
+
+
+
+
+\PassOptionsToPackage{automark}{scrlayer-scrpage}
+    
+    \RequirePackage{scrlayer-scrpage} 
+    \clearpairofpagestyles
+    
+    \let\MakeMarkcase\spacedlowsmallcaps
+    \ifthenelse{\boolean{ct@nochapters}}
+        {\relax}
+        {\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}}
+    \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+    \lehead{\mbox{\llap{\small\pagemark\kern2em}\headmark\hfil}}
+    \rohead{\mbox{\hfil{\headmark}\rlap{\small\kern2em\pagemark}}}
+    \renewcommand{\headfont}{\small}
+
+    
+        \def\toc@heading{
+            \ifthenelse{\boolean{ct@nochapters}}
+            {\section*{\contentsname}}
+            {\chapter*{\contentsname}}
+            \@mkboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}} 
+
+
+
+
+
+
+\RequirePackage[newparttoc]{titlesec} 
+\ifthenelse{\boolean{ct@nochapters}}{\relax}{\titleclass{\chapter}{top}} 
+\def\ttl@addcontentsline#1#2{
+  \addcontentsline{toc}{#1}{\ifttl@toclabel\ttl@a\fi{#2}}
+  \nobreak}
+
+\ifthenelse{\boolean{ct@parts}}
+{
+    \newcommand{\ctparttext}[1]{\renewcommand{\ctparttext@keep}{#1}}
+    \def\ctparttext@keep{} 
+    \def\ctparttext@print{\ctparttext@keep \gdef\ctparttext@keep{}}
+    \titleformat{\part}[display]
+    {\normalfont\centering\large}
+    {\thispagestyle{empty}\partname~\MakeTextUppercase{\thepart}}{1em}
+    {\color{Maroon}\spacedallcaps}[\bigskip\normalfont\normalsize\color{Black}\begin{quote}\ctparttext@print\end{quote}]
+}{\relax}
+
+\ifthenelse{\boolean{ct@linedheaders}}
+{
+    \titleformat{\chapter}[display]
+    {\relax}{\raggedleft{\color{halfgray}\chapterNumber\thechapter} \\ }{0pt}
+    {\titlerule\vspace*{.9\baselineskip}\raggedright\spacedallcaps}[\normalsize\vspace*{.8\baselineskip}\titlerule]
+}{
+    \titleformat{\chapter}[display]
+    {\relax}{\mbox{}\oldmarginpar{\vspace*{-3\baselineskip}\color{halfgray}\chapterNumber\thechapter}}{0pt}
+    {\raggedright\spacedallcaps}[\normalsize\vspace*{.8\baselineskip}\titlerule]
+}
+
+\titleformat{\section}
+    {\relax}{\textsc{\MakeTextLowercase{\thesection}}}{1em}{\spacedlowsmallcaps}
+
+\titleformat{\subsection}
+    {\relax}{\textsc{\MakeTextLowercase{\thesubsection}}}{1em}{\normalsize\itshape}
+
+\titleformat{\subsubsection}
+    {\relax}{\textsc{\MakeTextLowercase{\thesubsubsection}}}{1em}{\normalsize\itshape}
+
+\titleformat{\paragraph}[runin]
+    {\normalfont\normalsize}{\theparagraph}{0pt}{\spacedlowsmallcaps}
+
+    \renewcommand{\descriptionlabel}[1]{\hspace*{\labelsep}\spacedlowsmallcaps{#1}}   
+
+\ifthenelse{\boolean{ct@nochapters}}
+    {\relax}
+    {\titlespacing*{\chapter}{0pt}{1\baselineskip}{1.2\baselineskip}}
+\titlespacing*{\section}{0pt}{1.25\baselineskip}{1\baselineskip}
+\titlespacing*{\subsection}{0pt}{1.25\baselineskip}{1\baselineskip}
+\titlespacing*{\paragraph}{0pt}{1\baselineskip}{1\baselineskip}
+
+
+
+
+\PassOptionsToPackage{titles}{tocloft}
+\RequirePackage{tocloft}
+
+\newlength{\newnumberwidth}
+\settowidth{\newnumberwidth}{999} 
+\cftsetpnumwidth{\newnumberwidth}
+
+
+\newlength{\beforebibskip}
+\setlength{\beforebibskip}{0em}
+
+
+\newlength{\newchnumberwidth}
+\settowidth{\newchnumberwidth}{.} 
+\ifthenelse{\boolean{ct@manychapters}}
+{
+    \addtolength{\cftchapnumwidth}{\newchnumberwidth}
+    \addtolength{\cftsecnumwidth}{\newchnumberwidth}
+    \addtolength{\cftsecindent}{\newchnumberwidth}
+    \addtolength{\cftsubsecnumwidth}{\newchnumberwidth}
+    \addtolength{\cftsubsecindent}{2\newchnumberwidth}
+    \addtolength{\cftsubsubsecnumwidth}{\newchnumberwidth}
+}{\relax}
+
+
+
+\ifthenelse{\boolean{ct@parts}}
+{
+    \renewcommand{\thepart}{\roman{part}}
+    \renewcommand{\cftpartpresnum}{\scshape}
+    \renewcommand{\cftpartaftersnum}{}
+    \renewcommand{\cftpartaftersnumb}{\spacedlowsmallcaps}
+    \setlength{\cftpartnumwidth}{\cftchapnumwidth}
+    \renewcommand{\cftpartfont}{\color{Maroon}\normalfont}
+    \cftpagenumbersoff{part}
+    \renewcommand{\cftpartpagefont}{\normalfont}
+    \ifthenelse{\boolean{ct@dottedtoc}}{\relax}
+      {
+        \renewcommand{\cftpartleader}{\hspace{1.5em}}
+        \renewcommand{\cftpartafterpnum}{\cftparfillskip}
+      }
+    \setlength{\cftbeforepartskip}{1em}
+    \setlength{\cftbeforechapskip}{.1em}
+    \setlength{\beforebibskip}{1.5\cftbeforepartskip}
+}{\relax}
+
+\ifthenelse{\boolean{ct@nochapters}}
+    {\relax}
+    {
+        \renewcommand{\cftchappresnum}{\spacedlowsmallcaps}
+        \renewcommand{\cftchapaftersnumb}{\spacedlowsmallcaps}
+        \renewcommand{\cftchapfont}{\normalfont}
+        \renewcommand{\cftchappagefont}{\normalfont}
+        \ifthenelse{\boolean{ct@dottedtoc}}{\relax}
+          {
+            \renewcommand{\cftchapleader}{\hspace{1.5em}}
+            \renewcommand{\cftchapafterpnum}{\cftparfillskip}
+          }
+        
+    }
+
+\ifthenelse{\boolean{ct@nochapters}}
+    {
+        \setlength{\cftbeforesecskip}{.1em}
+        \setlength{\beforebibskip}{1em}
+    }
+    {\relax}
+\renewcommand{\cftsecpresnum}{\scshape\MakeTextLowercase}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\ifthenelse{\boolean{ct@dottedtoc}}{\relax}
+    {
+        \renewcommand{\cftsecleader}{\hspace{1.5em}}
+        \renewcommand{\cftsecafterpnum}{\cftparfillskip}
+    }
+    \ifthenelse{\boolean{ct@tocaligned}}{\renewcommand{\cftsecindent}{0em}}{\relax}
+
+\renewcommand{\cftsubsecpresnum}{\scshape\MakeTextLowercase}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\ifthenelse{\boolean{ct@dottedtoc}}{\relax}
+{
+    \renewcommand{\cftsubsecleader}{\hspace{1.5em}}
+    \renewcommand{\cftsubsecafterpnum}{\cftparfillskip}
+}
+\ifthenelse{\boolean{ct@tocaligned}}{\renewcommand{\cftsubsecindent}{0em}}{\relax}
+
+\renewcommand{\cftsubsubsecpresnum}{\scshape\MakeTextLowercase}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\ifthenelse{\boolean{ct@dottedtoc}}{\relax}
+{
+    \renewcommand{\cftsubsubsecleader}{\hspace{1.5em}}
+    \renewcommand{\cftsubsubsecafterpnum}{\cftparfillskip}
+}
+\ifthenelse{\boolean{ct@tocaligned}}{\renewcommand{\cftsubsubsecindent}{0em}}{\relax}
+
+\renewcommand{\cftfigpresnum}{\scshape\MakeTextLowercase}
+\renewcommand{\cftfigfont}{\normalfont}
+\ifthenelse{\boolean{ct@dottedtoc}}{\relax}
+{
+    \renewcommand{\cftfigleader}{\hspace{1.5em}}
+    \renewcommand{\cftfigafterpnum}{\cftparfillskip}
+}
+\renewcommand{\cftfigpresnum}{\figurename~}
+\newlength{\figurelabelwidth}
+\settowidth{\figurelabelwidth}{\cftfigpresnum~999}
+\addtolength{\figurelabelwidth}{2.5em}
+\cftsetindents{figure}{0em}{\figurelabelwidth}
+
+\renewcommand{\cfttabpresnum}{\scshape\MakeTextLowercase}
+\renewcommand{\cfttabfont}{\normalfont}
+\ifthenelse{\boolean{ct@dottedtoc}}{\relax}
+{
+    \renewcommand{\cfttableader}{\hspace{1.5em}}
+    \renewcommand{\cfttabafterpnum}{\cftparfillskip}
+}
+\renewcommand{\cfttabpresnum}{\tablename~}
+\newlength{\tablelabelwidth}
+\settowidth{\tablelabelwidth}{\cfttabpresnum~999}
+\addtolength{\tablelabelwidth}{2.5em}
+
+\cftsetindents{table}{0em}{\figurelabelwidth}
+
+\ifthenelse{\boolean{ct@listings}}
+{
+    \newlistof{listings}{lol}{\lstlistlistingname}
+    \renewcommand{\cftlistingspresnum}{\scshape\MakeTextLowercase}
+    \renewcommand{\cftlistingsfont}{\normalfont}
+    \renewcommand{\cftlistingspresnum}{\lstlistingname~}
+    \renewcommand{\cftlistingspagefont}{\normalfont}
+    \ifthenelse{\boolean{ct@dottedtoc}}{\relax}
+    {
+        \renewcommand{\cftlistingsleader}{\hspace{1.5em}}
+        \renewcommand{\cftlistingsafterpnum}{\cftparfillskip}
+    }
+    \newlength{\listingslabelwidth}
+    \settowidth{\listingslabelwidth}{\cftlistingspresnum~999}
+    \addtolength{\listingslabelwidth}{2.5em}
+    
+    \cftsetindents{listings}{0em}{\figurelabelwidth}
+    \let\l@lstlisting\l@listings
+    \let\lstlistoflistings\listoflistings
+}{\relax}
+
+
+\ifthenelse{\boolean{ct@parts}}
+{
+    \AtBeginDocument{\addtocontents{toc}{\protect\vspace{-\cftbeforepartskip}}}
+}{
+    \ifthenelse{\boolean{ct@nochapters}}
+        {\relax}
+        {\AtBeginDocument{\addtocontents{toc}{\protect\vspace{-\cftbeforechapskip}}}}
+}
+
+
+\newcommand{\tocEntry}[1]{\protect\numberline {}{#1}}
+
+
+
+\ifthenelse{\boolean{ct@listsseparated}}{
+    \PackageWarningNoLine{classicthesis}{Option "listsseparated" deprecated as of version 2.9.}
+}{\relax}
+
+
+
+
+
+
+
+
+
+
+
+
+\DeclareRobustCommand*{\deactivateaddvspace}{\let\addvspace\@gobble}
+\AtBeginDocument{
+    \addtocontents{lof}{\deactivateaddvspace}
+    \addtocontents{lot}{\deactivateaddvspace}
+            \ifthenelse{\boolean{ct@listings}}
+            {
+                \addtocontents{lol}{\deactivateaddvspace}
+            }{\relax}
+}
+
+
+
+
+
+\ifdefined\deffootnote
+    
+    \deffootnote{0em}{0em}{\thefootnotemark\hspace*{.5em}}
+    \message{Using KOMA-command "deffootnote" for footnote setup}
+\else
+    \PassOptionsToPackage{flushmargin}{footmisc}
+    \RequirePackage{footmisc}
+    \setlength{\footnotemargin}{-.5em}
+    \PackageWarningNoLine{classicthesis}{Using package "footmisc" with option 
+        "flushmargin" for footnote setup (not 100\
+\fi
+
+
+
+
+\RequirePackage{scrtime} 
+\newcommand{\finalVersionString}{\relax}
+\providecommand{\myVersion}{$\!\!$} 
+\ifthenelse{\boolean{ct@drafting}}{
+
+
+
+
+        \PassOptionsToPackage{draft}{prelim2e}
+        \RequirePackage{prelim2e}
+        \renewcommand{\PrelimWords}{\relax}
+        \renewcommand{\PrelimText}{\footnotesize[\,\today\ at \thistime\ -- \texttt{classicthesis}~\myVersion\,]}
+}{\renewcommand{\finalVersionString}{\emph{Final Version} as of \today\ (\texttt{classicthesis}~\myVersion).}}
+
+
+
+
+\ifthenelse{\boolean{ct@floatperchapter}}{
+    \ifthenelse{\boolean{ct@listings}}{
+        \lstset{numberbychapter=true}}{\relax}
+}{
+    \ifthenelse{\boolean{ct@listings}}{
+        \lstset{numberbychapter=false}}{\relax}
+    \RequirePackage{remreset}
+        \ifthenelse{\boolean{ct@nochapters}}
+        {\relax}{
+            \@removefromreset{table}{chapter}  
+        }
+        \renewcommand{\thetable}{\arabic{table}}
+        \ifthenelse{\boolean{ct@nochapters}}
+        {\relax}{
+            \@removefromreset{figure}{chapter}  
+        }
+        \renewcommand{\thefigure}{\arabic{figure}}
+        \ifthenelse{\boolean{ct@nochapters}}
+        {\relax}{
+            \@removefromreset{equation}{chapter}  
+        }
+        \renewcommand{\theequation}{\arabic{equation}}
+}
+
+
+
+
+\let\myChapter\chapter
+\let\myPart\part
+\let\graffito\marginpar

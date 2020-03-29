@@ -1,0 +1,113 @@
+\PassOptionsToPackage{
+  drafting=false,  
+  tocaligned=false,
+  dottedtoc=true,  
+  parts=true,       
+  eulerchapternumbers=true,
+  linedheaders=false,      
+  floatperchapter=true,    
+  listings=true,     
+  subfig=true,       
+  eulermath=false,   
+  beramono=true,     
+  minionpro=false    
+}{classicthesis}
+\newcounter{dummy}  
+\newlength{\abcd}  
+\providecommand{\mLyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\newcommand{\ie}{i.\,e.}
+\newcommand{\Ie}{I.\,e.}
+\newcommand{\eg}{e.\,g.}
+\newcommand{\Eg}{E.\,g.}
+\usepackage{babel}
+\usepackage{csquotes}
+
+\PassOptionsToPackage{ 
+  backend=bibtex8,bibencoding=ascii, 
+  language=auto, 
+  style=numeric-comp,    
+  sorting=nyt,  
+  maxbibnames=10,     
+  natbib=true  
+}{biblatex}
+  \usepackage{biblatex}
+\PassOptionsToPackage{fleqn}{amsmath}        
+  \usepackage{amsmath}
+\PassOptionsToPackage{doublespacing}{hdathesis}   
+  \usepackage{hdathesis}
+\PassOptionsToPackage{T1}{fontenc}  
+  \usepackage{fontenc}
+\usepackage{textcomp}  
+\usepackage{scrhack}  
+\usepackage{xspace}  
+\usepackage{mparhack}  
+\PassOptionsToPackage{printonlyused,smaller}{acronym}
+  \usepackage{acronym}  
+  \def\bflabel#1{{\acsfont{#1}\hfill}}
+  \def\aclabelfont#1{\acsfont{#1}}
+\usepackage{tabularx}  
+  \setlength{\extrarowheight}{3pt}  
+\newcommand{\tableheadline}[1]{\multicolumn{1}{c}{\spacedlowsmallcaps{#1}}}
+\newcommand{\myfloatalign}{\centering}  
+\usepackage{caption}
+\captionsetup{font=small}  
+\usepackage{subfig} 
+\usepackage{listings}
+ 
+\lstset{language=[LaTeX]Tex, 
+  morekeywords={PassOptionsToPackage,selectlanguage},
+  keywordstyle=\color{RoyalBlue}, 
+  basicstyle=\small\ttfamily,   
+  commentstyle=\color{Green}\ttfamily,
+  stringstyle=\rmfamily,
+  numbers=none, 
+  numberstyle=\scriptsize, 
+  stepnumber=5,
+  numbersep=8pt,
+  showstringspaces=false,
+  breaklines=true,      
+  belowcaptionskip=.75\baselineskip   
+}
+\PassOptionsToPackage{hyperfootnotes=false,pdfpagelabels}{hyperref}
+  \usepackage{hyperref}   
+  \usepackage{graphicx} 
+\hypersetup{    
+  colorlinks=true, linktocpage=true, pdfstartpage=3, pdfstartview=FitV,   
+  breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines, 
+  plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1, 
+  hypertexnames=true, pdfhighlight=/O, 
+  urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen,     
+  pdftitle={\myTitle}, 
+  pdfauthor={\textcopyright\ \myName, \myUni, \myFaculty}, 
+  pdfsubject={}, 
+  pdfkeywords={}, 
+  pdfcreator={pdfLaTeX}, 
+  pdfproducer={LaTeX with hyperref and classicthesis} 
+}
+\makeatletter
+\@ifpackageloaded{babel} 
+  { 
+    \addto\extrasamerican{ 
+      \renewcommand*{\figureautorefname}{Figure} 
+      \renewcommand*{\tableautorefname}{Table} 
+      \renewcommand*{\partautorefname}{Part} 
+      \renewcommand*{\chapterautorefname}{Chapter} 
+      \renewcommand*{\sectionautorefname}{Section} 
+      \renewcommand*{\subsectionautorefname}{Section} 
+      \renewcommand*{\subsubsectionautorefname}{Section} 
+    } 
+    \addto\extrasngerman{ 
+      \renewcommand*{\paragraphautorefname}{Absatz} 
+      \renewcommand*{\subparagraphautorefname}{Unterabsatz} 
+      \renewcommand*{\footnoteautorefname}{Fu\"snote} 
+      \renewcommand*{\FancyVerbLineautorefname}{Zeile} 
+      \renewcommand*{\theoremautorefname}{Theorem} 
+      \renewcommand*{\appendixautorefname}{Anhang} 
+      \renewcommand*{\equationautorefname}{Gleichung} 
+      \renewcommand*{\itemautorefname}{Punkt} 
+    } 
+      \providecommand{\subfigureautorefname}{\figureautorefname} 
+    }{\relax}
+\makeatother
+\listfiles
+\usepackage{classicthesis}
