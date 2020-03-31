@@ -10,26 +10,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}{Was macht Arbeit sinnvoll?}}{3}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}{Arbeit und Individuum}}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.1}{Das Individuum in der Arbeitswelt}}{3}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}{Kohärenz im Beruf}}{4}{section.3.2}%
+\contentsline {section}{\numberline {3.2}{Kohärenz im Beruf}}{3}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}{Qualität der Organisation}}{4}{section.3.3}%
+\contentsline {section}{\numberline {3.3}{Einfluss der Qualität auf das Sinnerleben}}{4}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}{Arbeit und Gesellschaft}}{5}{section.3.4}%
+\contentsline {section}{\numberline {3.4}{Gesellschaftliche Resonanz als Sinnquelle}}{4}{section.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}{Sinnerfüllung}}{5}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}{Chancen und Risiken der Digitalisierung}}{7}{chapter.4}%
+\contentsline {chapter}{\numberline {4}{Chancen und Risiken der Digitalisierung}}{6}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}{Substitution von Arbeit}}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.1}{Substitution}}{6}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}{Upgrading of Work}}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.2}{Upgrading of Work}}{7}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}{Polarisierung}}{8}{section.4.3}%
+\contentsline {section}{\numberline {4.3}{Polarisierung}}{7}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}{Fazit}}{10}{chapter.5}%
+\contentsline {chapter}{\numberline {5}{Fazit}}{9}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \vspace {\beforebibskip }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{Literatur}}{11}{section*.1}%
+\contentsline {chapter}{\numberline {}{Literatur}}{10}{section*.1}%

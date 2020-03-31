@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.28)  30 MAR 2020 16:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.28)  31 MAR 2020 10:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1700,11 +1700,11 @@ Kapitel 3.
 
 
 ]
-Overfull \hbox (0.29648pt too wide) in paragraph at lines 11--13
-\T1/pplj/m/n/10.95 Fä-hig-kei-ten als auch Mit-tel, um die ihm ge-gen-über-ge-stell-ten Ein-drücke
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
  []
 
-[4] [5]) [6]
+[4]) [5]
 \openout2 = `Thesis/3_MainContent/4_ChancenUndRisiken/ChancenUndRisiken.aux'.
 
  (c:\Users\Alexander Manger\Desktop\Insori2020\Insori2020/Thesis/3_MainContent/4_ChancenUndRisiken/ChancenUndRisiken.tex
@@ -1719,7 +1719,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[7
+[6
 
 
 
@@ -1729,12 +1729,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[8]) [9]
+[7]) [8]
 \openout2 = `Thesis/3_MainContent/5_Conclusion/Conclusion.aux'.
 
  (c:\Users\Alexander Manger\Desktop\Insori2020\Insori2020/Thesis/3_MainContent/5_Conclusion/Conclusion.tex
 Kapitel 5.
-) [10
+) [9
 
 
 
@@ -1758,7 +1758,7 @@ Overfull \hbox (0.9297pt too wide) in paragraph at lines 15--15
 \T1/pplj/m/n/10.95 fahr oder ei-ne Chan-ce für das Sin-ner-le-ben der Ar-beit dar?^^Q In: \T1/pplj/m/it/10.95 Fehlzeiten-
  []
 
-) [11
+) [10
 
 
 
@@ -1973,18 +1973,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 ### simple group (level 1) entered at line 57 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37783 strings out of 492164
- 711059 string characters out of 6129087
- 1241615 words of memory out of 5000000
- 41470 multiletter control sequences out of 15000+600000
+ 37780 strings out of 492164
+ 711022 string characters out of 6129087
+ 1241611 words of memory out of 5000000
+ 41468 multiletter control sequences out of 15000+600000
  593585 words of font info for 109 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,22n,97p,10123b,18490s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><d:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "c:\Users\Alexander Manger\Desktop\Insori2020\Insori2020/thesis.pdf" (15 pages, 135834 bytes).
+Output written on "c:\Users\Alexander Manger\Desktop\Insori2020\Insori2020/thesis.pdf" (14 pages, 135182 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 500000)
  14470 words of extra memory for PDF output out of 17280 (max. 10000000)
 
